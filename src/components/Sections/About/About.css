@@ -1,0 +1,138 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap'); */
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600&display=swap");
+
+
+.about {
+  background: radial-gradient(circle at top left, #272727, #000);
+  color: #fff;
+  padding: 200px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Clash Display', sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.about::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #5707b3, transparent);
+  top: -100px;
+  left: -100px;
+  filter: blur(100px);
+  z-index: 0;
+}
+
+
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  width: 100%;
+  gap: 40px;
+  align-items: center;
+}
+
+.about-text {
+  flex: 1 1 500px;
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 0.8s ease-out;
+}
+
+.about-text.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.about-text h2 {
+  font-size: 5rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+  color: #ffffff;
+}
+
+.about-text h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  font-weight: 400;
+}
+
+.about-text h3 span {
+  color: #ffffff;
+}
+
+.about-text p {
+  line-height: 1.7;
+  color: #ccc;
+  margin-bottom: 20px;
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.about-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  font-size: 1rem;
+  padding: 10px 25px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+.about-btn:hover {
+  background-color: #fff;
+  color: #000;
+  transform: scale(1.05);
+}
+
+.about-img {
+  flex: 1 1 350px;
+  text-align: center;
+  opacity: 0;
+  transform: translateX(120px);
+  /* start slightly off-screen */
+  transition: all 0.9s cubic-bezier(0.25, 0.8, 0.25, 1);
+  /* smooth ease-out */
+  will-change: transform, opacity;
+}
+
+.about-img.visible {
+  opacity: 1;
+  transform: translateX(0);
+  /* slide into place */
+  transition: opacity 0.9s ease, transform 0.9s ease;
+
+}
+
+.about-img img {
+  width: 380px;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.about-img img:hover {
+  transform: scale(1.05);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-container {
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+
+  .about-text h2 {
+    font-size: 2rem;
+  }
+
+  .about-img img {
+    width: 220px;
+  }
+}

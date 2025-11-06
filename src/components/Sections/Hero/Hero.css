@@ -1,0 +1,156 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nura&display=swap'); */
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600&display=swap");
+
+
+html, body {
+  /* height: 100%; */
+  /* overflow-x: hidden; */
+  background-color: #000000; 
+}
+
+.hero {
+  
+  position: relative;
+  height: 100vh;
+  /* background: radial-gradient(circle at 20% 20%, #1a1a40, #000); */
+  overflow: hidden;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+  font-family: 'Clash Display', sans-serif;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 100%;
+  padding: 0 20px;
+}
+
+/* --- Small Intro Text --- */
+.intro-text {
+  font-size: 1.4rem;
+  /* smaller font size */
+  font-weight: 600;
+  color: #ffffff;
+  /* margin-bottom: 10px; */
+  letter-spacing: 1px;
+}
+
+
+
+/* --- Main Heading --- */
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+    /* starts slightly down */
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+    /* ends in normal position */
+  }
+}
+
+.hero h1 {
+  font-size: 10rem;
+  line-height: 1.1;
+  font-weight: 500;
+  animation: slideUp 1s ease-out forwards;
+
+}
+
+.hero .intro-text {
+  font-size: 3.5rem;
+  margin-top: 20px;
+  color: #ebebeb;
+}
+
+.sub-text{
+font-size: 2rem;
+font-weight: 400;}
+
+
+
+
+/* --- Subtext --- */
+.hero p {
+  font-size: 1.1rem;
+  margin-top: 30px;
+  letter-spacing: 2px;
+  color: #ccc;
+}
+
+/* Optional Image Position */
+.hero-bg img {
+  position: absolute;
+  right: 5%;
+  bottom: 0;
+  width: 700px;
+  max-width: 90%;
+  z-index: 1;
+  opacity: 0.9;
+  filter: drop-shadow(0 0 60px rgba(0, 188, 212, 0.8));
+}
+
+/* --- Responsive --- */
+@media (max-width: 768px) {
+  .hero {
+    text-align: center;
+  }
+
+  .intro-text {
+    font-size: 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero-bg img {
+    bottom: -50px;
+    width: 90%;
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0.7;
+  }
+}
+
+.split-title {
+  display: flex;
+  /* ensures no inline text gap */
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.split-title span {
+  font-size: 18rem;
+  /* your hero h1 size */
+  font-weight: 600;
+  line-height: 1;
+  display: inline-block;
+}
+
+.shu,
+.aib {
+  display: inline-block;
+  transition: transform 0.1s ease;
+  filter: blur(0px);
+  /* starts clear */
+  margin: 0;
+  padding: 0;
+
+}
+
+.aib {
+  margin-left: -15px;
+  /* try -10px or -20px until perfect */
+}

@@ -1,0 +1,89 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap'); */
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600&display=swap");
+
+
+.works-section {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background: radial-gradient(circle at top left, #272727, #000);
+  color: white;
+ font-family: 'Clash Display', sans-serif;
+  padding: 120px 0;
+  overflow: hidden;
+}
+
+.works-section::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, #5707b3, transparent);
+  top: -100px;
+  left: -100px;
+  filter: blur(100px);
+  z-index: 0;
+}
+
+.works-header {
+  position: relative;
+  z-index: 1;
+  padding-left: 10vw;
+  margin-bottom: 80px;
+  max-width: 700px;
+}
+
+.works-header h2 {
+  font-size: 4rem;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+/* .works-header p {
+  font-size: 1.1rem;
+  color: #ccc;
+  line-height: 1.6;
+} */
+
+.works-container {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+  padding: 0 10vw;
+}
+
+.work-card {
+  flex: 0 0 auto;
+  width: 700px;
+  background: #1a1a1a;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.work-card:hover {
+  transform: scale(1.03);
+}
+
+.work-card img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+
+.work-info {
+  padding: 20px;
+}
+
+.work-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  font-weight: 500;
+}
+
+.work-info p {
+  color: #ccc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
