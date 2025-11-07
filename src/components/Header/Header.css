@@ -26,6 +26,11 @@
   letter-spacing: 1px;
 }
 
+.logo a{
+  text-decoration: none;
+  color: white;
+}
+
 /* Nav menu */
 .nav-menu ul {
   display: flex;

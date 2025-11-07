@@ -1,0 +1,153 @@
+@import url("https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600&display=swap");
+
+
+.contact-section {
+    position: relative;
+    background: linear-gradient(135deg, #050505, #0d0d0d);
+    /* dark background */
+    color: #f5f5f5;
+    /* light text */
+    padding: 120px 20px;
+    font-family: 'Clash Display', sans-serif;
+
+}
+
+.contact-section::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, #5707b3, transparent);
+    top: -100px;
+    right: -100px;
+    filter: blur(100px);
+    z-index: 0;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+     overflow: visible;
+}
+
+.contact-content {
+    flex: 1 1 300px;
+}
+
+.contact-content h2 {
+    font-size: 4rem;
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.contact-content p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+.contact-form {
+    flex: 1 1 400px;
+    background-color: #1e1e1e;
+    /* slightly lighter dark for form */
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    background-color: #2b2b2b;
+    /* dark input background */
+    border: 1px solid #444;
+    /* subtle border */
+    padding: 12px 15px;
+    border-radius: 8px;
+    color: #f5f5f5;
+    font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    font-family: 'Clash Display', sans-serif;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #5707b3;
+    /* bright focus color */
+    /* box-shadow: 0 0 8px rgba(0, 191, 255, 0.5); */
+}
+
+.contact-form textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    font-size: 0.9rem;
+    color : #ccc;
+}   
+.contact-form button {
+    background-color: #5707b3;
+    /* bright button color */
+    color: #121212;
+    /* dark text */
+    border: none;
+    padding: 12px 20px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, box-shadow 0.3s;
+}   
+.contact-form button:hover {
+    background-color: #5707b3;
+    /* darker on hover */
+    /* box-shadow: 0 4px 12px rgba(0, 172, 237, 0.5); */
+}   
+@media (max-width: 768px) {
+    .contact-container {
+        flex-direction: column;
+    }
+}
+.contact-form button:disabled {
+    background-color: #555;
+    cursor: not-allowed;
+    box-shadow: none;
+}
+.contact-form button:disabled:hover {
+    background-color: #555;
+    box-shadow: none;
+}
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    color: #888;
+}
+.contact-form input:invalid,
+.contact-form textarea:invalid {
+    border-color: #ff4d4d;
+}   
+.contact-form input:invalid:focus,
+.contact-form textarea:invalid:focus {
+    box-shadow: 0 0 8px rgba(255, 77, 77, 0.5);
+}   
+.contact-form input:valid,
+.contact-form textarea:valid {
+    border-color: #5707b3;
+}   
+.contact-form input:valid:focus,
+.contact-form textarea:valid:focus {
+    box-shadow: #5707b3 0 0 8px;
+}
+
+
+    

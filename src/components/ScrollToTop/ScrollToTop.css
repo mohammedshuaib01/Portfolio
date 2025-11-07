@@ -1,0 +1,33 @@
+.scroll-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  background: transparent;
+  border: 2px solid #5707b0;
+  color: #5707b0;
+  border-radius: 50%;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 9999;
+  backdrop-filter: blur(4px);
+}
+
+.scroll-top:hover {
+  background: #5707b0;
+  color: #fff;
+  transform: translateY(-4px);
+}
+
+/* Simple fade in/out */
+.scroll-top {
+  opacity: 0;
+  animation: fadeIn 0.4s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+

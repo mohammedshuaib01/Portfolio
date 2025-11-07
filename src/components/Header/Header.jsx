@@ -7,7 +7,7 @@ function Header() {
 
   return (
     <header className='header'>
-      <div className='logo'>SHUAIB.</div>
+      <div className='logo' > <a href="#home">SHUAIB.</a></div>
 
       <div
         className={`burger ${menuOpen ? 'open' : ''}`}
