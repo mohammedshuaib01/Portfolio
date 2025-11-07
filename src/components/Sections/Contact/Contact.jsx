@@ -43,7 +43,7 @@ function Contact() {
       ease: 'power3.out',
       scrollTrigger: {
         trigger: '.contact-section',
-        start: 'top 80%',
+        start: 'top 50%',
         toggleActions: 'play none none reverse',
       },
     }

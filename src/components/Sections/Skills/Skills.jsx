@@ -60,13 +60,13 @@ function Skills() {
   }, []);
 
   const skills = [
-    { name: "React", icon: "src/assets/icons/atom.png" },
-    { name: "Python", icon: "src/assets/icons/python.png" },
-    { name: "Django", icon: "src/assets/icons/icons8-django-96.png" },
-    { name: "JavaScript", icon: "src/assets/icons/js.png" },
-    { name: "HTML & CSS", icon: "src/assets/icons/html-5.png" },
-    { name: "WordPress", icon: "src/assets/icons/wordpress.png" },
-    { name: "Shopify", icon: "src/assets/icons/shopify.png" },
+    { name: "React", icon: "Images/atom.png" },
+    { name: "Python", icon: "Images/python.png" },
+    { name: "Django", icon: "Images/icons8-django-96.png" },
+    { name: "JavaScript", icon: "Images/js.png" },
+    { name: "HTML & CSS", icon: "Images/html-5.png" },
+    { name: "WordPress", icon: "Images/wordpress.png" },
+    { name: "Shopify", icon: "Images/shopify.png" },
   ];
 
   return (

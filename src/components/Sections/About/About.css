@@ -68,9 +68,10 @@
 
 .about-text p {
   line-height: 1.7;
+  word-spacing: 4px;
   color: #ccc;
   margin-bottom: 20px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-weight: 300;
 }
 

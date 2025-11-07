@@ -1,8 +1,8 @@
 import React from 'react'
-
-import { gsap } from "gsap"
-import { ScrollTrigger } from "gsap/ScrollTrigger"
-import { ScrollSmoother } from 'gsap/all'
+// import { useEffect } from "react";
+// import { gsap } from "gsap"
+// import { ScrollTrigger } from "gsap/ScrollTrigger"
+// import { ScrollSmoother } from 'gsap/all'
 import "./App.css";
 
 
@@ -16,8 +16,6 @@ import Skills from './components/Sections/Skills/Skills'
 import Works from './components/Sections/Works/Works'
 import Contact from './components/Sections/Contact/Contact'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
-
-gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
 function App() {
 

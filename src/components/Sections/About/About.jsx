@@ -53,7 +53,7 @@ function About() {
         </div>
 
         <div className="about-img" ref={imgRef}>
-          <img src="..\src\assets\shuaiblaptop.jpg" alt="Shuaib - Web Developer" />
+          <img src="Images\shuaiblaptop.jpg" alt="Shuaib - Web Developer" />
         </div>
       </div>
     </section>

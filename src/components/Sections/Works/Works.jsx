@@ -3,6 +3,8 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import "./Works.css";
 
+
+
 gsap.registerPlugin(ScrollTrigger);
 
 const projects = [
@@ -10,25 +12,25 @@ const projects = [
     id: 1,
     title: "Portfolio Website",
     desc: "A personal portfolio built with React and GSAP animations.",
-    image: "src/assets/a2.jpg",
+    image: "Images/a2.jpg",
   },
   {
     id: 2,
     title: "E-Commerce Platform",
     desc: "A clean, responsive e-commerce site using Django backend.",
-    image: "src/assets/bar.jpg",
+    image: "Images/bar.jpg",
   },
   {
     id: 3,
     title: "Jewellery Website",
     desc: "Creative branding visuals and digital identity designs.",
-    image: "src/assets/jesslady.jpg",
+    image: "Images/jesslady.jpg",
   },
   {
     id: 4,
     title: "Photography Gallery",
     desc: "An immersive gallery layout with smooth GSAP transitions.",
-    image: "src/assets/cleaning.jpg",
+    image: "Images/cleaning.jpg",
   },
  
 ];
@@ -82,3 +84,4 @@ function Works() {
 }
 
 export default Works;
+    
