@@ -1,0 +1,28 @@
+.scroll-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -20px;
+}
+
+.mouse-outline {
+  width: 30px;
+  height: 60px;
+  border: 2.5px solid #ffffff;
+  border-radius: 25px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  padding-top: 8px;
+  opacity: 0.9;
+}
+
+.mouse-dot {
+  width: 6px;
+  height: 10px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  position: relative;
+  opacity: 0.9;
+}

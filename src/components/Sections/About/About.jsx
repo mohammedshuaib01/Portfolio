@@ -38,12 +38,8 @@ function About() {
             I'm <span>Shuaib</span>, a Web Developer
           </h3>
           <p>
-            I’m a passionate web developer focused on building responsive,
-            modern, and user-friendly websites. I enjoy turning ideas into
-            interactive digital experiences that not only look great but also
-            perform seamlessly. I love working with React, JavaScript, and
-            Django, and I’m always exploring new technologies to sharpen my
-            skills.
+            I’m a passionate web developer who loves turning curiosity into code. I build responsive, modern, and user-friendly websites using React, JavaScript, and Django. For me, coding is where creativity meets 
+            logic bringing fun, interactive ideas to life on the web.
           </p>
           {/* <p>
             When I’m not coding, I like learning new design trends and building

@@ -1,0 +1,35 @@
+.droplet-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  border-radius: 50%;
+  backdrop-filter: blur(10px);
+  background: rgba(255, 255, 255, 0.15);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+}
+
+/* Main drop */
+.main {
+  width: 20px;
+  height: 20px;
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(20px);
+}
+
+/* Tail drops */
+.tail1 {
+  width: 14px;
+  height: 14px;
+  opacity: 0.5;
+  backdrop-filter: blur(12px);
+}
+
+.tail2 {
+  width: 8px;
+  height: 8px;
+  opacity: 0.3;
+  backdrop-filter: blur(8px);
+}

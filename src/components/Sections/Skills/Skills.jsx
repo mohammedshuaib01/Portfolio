@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./Skills.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import ScrollIndicator from "../../ScrollIndicator/ScrollIndicator";  
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -72,6 +73,7 @@ function Skills() {
   return (
     <section id="skills" className="skills-section" ref={sectionRef}>
       <h2 className="skills-title">What I Do</h2>
+      <div> <ScrollIndicator /></div>
       <div className="skills-wrapper">
         {skills.map((skill, index) => (
           <div
