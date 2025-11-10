@@ -123,3 +123,14 @@
   pointer-events: none;
   filter: blur(80px);
 }
+
+@media (max-width: 786px) {
+  
+  .footer-title {
+    font-size: 3rem;
+  }
+
+  .footer-subtitle {
+    font-size: 0.9rem;
+  } 
+}

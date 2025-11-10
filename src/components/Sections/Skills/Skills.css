@@ -112,4 +112,8 @@
         left: 50%;
         transform: translateX(-50%);
     }
+
+    .skills-title {
+        font-size: 2.6rem;
+    }
 }

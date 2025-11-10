@@ -80,7 +80,7 @@
 }
 
 .work-info h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
   font-weight: 500;
 }
@@ -89,4 +89,33 @@
   color: #ccc;
   font-size: 1rem;
   line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .works-section {
+    padding: 80px 0;
+  }
+
+  .works-header {
+    padding-left: 5vw;
+    margin-bottom: 40px;
+  }
+
+  .works-header h2 {
+    font-size: 2.6rem;
+  }
+
+  .works-container {
+    gap: 50px;
+    padding: 0 5vw;
+  }
+
+  .work-card {
+    width: 90vw;
+  }
+
+  .work-card img {
+    height: 250px;
+  }
+  
 }

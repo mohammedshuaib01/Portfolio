@@ -12,6 +12,7 @@ import Contact from './components/Sections/Contact/Contact'
 import ScrollToTop from './components/ScrollToTop/ScrollToTop'
 import Preloader from './components/Preloader/Preloader'
 import DropletCursor from './components/DropletCursor/DropletCursor'
+import TextLoop from './components/Sections/TextLoop/TextLoop'
 
 function App() {
 
@@ -29,6 +30,8 @@ function App() {
         <Hero />
 
         <About />
+
+        {/* <TextLoop/> */}
 
         <Skills />
 

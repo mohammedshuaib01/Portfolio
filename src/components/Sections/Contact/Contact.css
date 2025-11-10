@@ -150,5 +150,20 @@
     box-shadow: #5707b3 0 0 8px;
 }
 
+@media (max-width:768px) {
+    .contact-content h2 {
+        font-size: 2.6rem;
+    }
+
+    .contact-section {
+        padding: 80px 20px;
+    }
+
+    .contact-content, .contact-form {
+        flex: 1 1 100%;
+    }
+    
+}
+
 
     
