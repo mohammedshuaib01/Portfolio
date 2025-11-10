@@ -20,12 +20,10 @@ function App() {
 
     <div id="smooth-wrapper">
       <div id="smooth-content">
-
+        <Preloader />
         <Header />
 
         <DropletCursor />
-        
-        <Preloader />
 
         <Hero />
 
@@ -44,7 +42,7 @@ function App() {
 
 
         {/* Scroll Button  */}
-        <ScrollToTop/>
+        <ScrollToTop />
 
       </div>
     </div>
