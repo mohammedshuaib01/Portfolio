@@ -1,31 +1,28 @@
-// src/components/Preloader.jsx
-import React, { useEffect, useRef } from "react";
-import { gsap } from "gsap";
-import "./Preloader.css";
+import React, { useState, useEffect } from 'react'
+import "./Preloader.css"
 
 function Preloader() {
-  const loaderRef = useRef(null);
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    // Fade out when page loads
-    window.addEventListener("load", () => {
-      gsap.to(loaderRef.current, {
-        opacity: 0,
-        duration: 1,
-        ease: "power2.out",
-        onComplete: () => {
-          loaderRef.current.style.display = "none";
-        },
-      });
-    });
-  }, []);
+    const timer = setTimeout(() => {
+      setLoading(false)
+    }, 3000)
+
+    return () => clearTimeout(timer)
+  }, [])
+
+  if (!loading) return null // hide preloader after 3s
 
   return (
-    <div className="preloader" ref={loaderRef}>
-      <div className="loader-circle"></div>
-      <h2 className="loader-text">Loading...</h2>
+  <div className='preloader'>
+    <div className='loading-text'>
+      Loading<span className='dots'></span>
     </div>
-  );
+  </div>
+)
+
+
 }
 
-export default Preloader;
+export default Preloader
