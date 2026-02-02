@@ -7,7 +7,7 @@ function Preloader() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false)
-    }, 3000)
+    }, 800)
 
     return () => clearTimeout(timer)
   }, [])
@@ -15,12 +15,12 @@ function Preloader() {
   if (!loading) return null // hide preloader after 3s
 
   return (
-  <div className='preloader'>
-    <div className='loading-text'>
-      Loading<span className='dots'></span>
+    <div className='preloader'>
+      <div className='loading-text'>
+        Loading<span className='dots'></span>
+      </div>
     </div>
-  </div>
-)
+  )
 
 
 }

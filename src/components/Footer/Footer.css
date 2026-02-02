@@ -1,13 +1,14 @@
 @import url("https://api.fontshare.com/v2/css?f[]=clash-display@300,400,500,600&display=swap");
 
 .footer {
-  background: radial-gradient(circle at 30% 80%, #0a0a0a, #000);
+  background: #050505;
   color: #e0e0e0;
   padding: 80px 20px;
   text-align: center;
   position: relative;
   overflow: hidden;
   font-family: 'Clash Display', sans-serif;
+  border-top: 1px solid #111;
 }
 
 .footer-container {
@@ -109,20 +110,7 @@
   letter-spacing: 0.5px;
 }
 
-/* Subtle background glow effect */
-.footer::before {
-  content: "";
-  position: absolute;
-  top: -150px;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 500px;
-  height: 500px;
-  background: radial-gradient(circle, rgba(87, 7, 176, 0.15), transparent 70%);
-  z-index: 0;
-  pointer-events: none;
-  filter: blur(80px);
-}
+
 
 @media (max-width: 786px) {
   

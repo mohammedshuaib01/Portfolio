@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import "./Skills.css";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import ScrollIndicator from "../../ScrollIndicator/ScrollIndicator";  
+import ScrollIndicator from "../../ScrollIndicator/ScrollIndicator";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -50,7 +50,7 @@ function Skills() {
             scale: 0.9,
             duration: 2,
             ease: "power2.inOut",
-            
+
           },
           i * durationPerBox + 3
         );
@@ -81,7 +81,7 @@ function Skills() {
             ref={(el) => (boxesRef.current[index] = el)}
             className={`skill-box ${index % 2 === 0 ? "left" : "right"}`}
           >
-            <img src={skill.icon} alt={skill.name} />
+            <img src={skill.icon} alt={skill.name} loading="lazy" />
             <h3>{skill.name}</h3>
           </div>
         ))}
