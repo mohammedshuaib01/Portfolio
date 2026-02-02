@@ -29,37 +29,37 @@ const Projects = () => {
         {
             title: 'Youway - Ecommerce',
             description: 'Complete e-commerce store with optimized checkout that increased conversions by 40%',
-            image: "src/assets/projects/youway.jpg",
+            image: "Images/youway.jpg",
             tags: ['E-commerce', 'Django', 'Python', 'HTML', 'CSS']
         },
         {
             title: 'Fotopi - Social Media',
             description: 'Internal platform that automated processes and reduced operational costs with multiple integrations',
-            image: "images/fotopi.jpg",
+            image: "Images/fotopi.jpg",
             tags: ['Django', 'Python', 'HTML', 'CSS']
         },
         {
             title: 'ERON - CRM Website',
             description: 'Intelligent dashboards for real-time data visualization with predictive AI',
-            image: "src/assets/projects/eroncrm.jpg",
+            image: "Images/eroncrm.jpg",
             tags: [ 'React', 'JSX', 'HTML', 'CSS']
         },
         {
             title: 'RMA - Work Abroad Website',
             description: 'Modern banking interface focusing on accessibility and data security',
-            image: "src/assets/projects/RMA.jpg",
+            image: "Images/RMA.jpg",
             tags: ['React', 'JSX', 'HTML', 'CSS']
         },
         {
             title: 'LearnIT - LMS',
             description: 'Modern banking interface focusing on accessibility and data security',
-            image: "src/assets/projects/learnit.jpg",
+            image: "Images/learnit.jpg",
             tags: ['Django', 'React', 'REST API','Antigravity', 'HTML', 'CSS']
         },
         {
             title: 'Screeners - Website',
             description: 'Modern banking interface focusing on accessibility and data security',
-            image: "src/assets/projects/Screeners.jpg",
+            image: "Images/Screeners.jpg",
             tags: ['WordPress', 'PHP', 'Hostinger']
         },
     ];
