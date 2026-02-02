@@ -35,7 +35,7 @@ const Projects = () => {
         {
             title: 'Fotopi - Social Media',
             description: 'Internal platform that automated processes and reduced operational costs with multiple integrations',
-            image: "src/assets/projects/fotopi.jpg",
+            image: "images/fotopi.jpg",
             tags: ['Django', 'Python', 'HTML', 'CSS']
         },
         {
