@@ -27,13 +27,13 @@ const Experience = () => {
             year: '2025 - Present',
             title: 'Web Developer Intern',
             company: 'Sysdevcode Technologies Pvt Ltd',
-            description: 'Leading the front-end development team to build scalable and high-performance web applications using React and modern CSS techniques.'
+            description: 'Full-stack development intern gaining hands-on experience with React, Django, API integration, and responsive user interfaces.'
         },
         {
             year: '2023 - 2025',
             title: 'Wordpress Developer',
             company: 'Web Maestro Technologies',
-            description: 'Focused on creating immersive user experiences and translating complex designs into pixel-perfect, responsive code.'
+            description: 'Developing custom WordPress themes with WooCommerce and Shopify integration, focusing on mobile-first, SEO-friendly design and effective team collaboration.'
         }
     ];
 
