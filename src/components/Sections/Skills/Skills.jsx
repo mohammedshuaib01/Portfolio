@@ -72,7 +72,7 @@ function Skills() {
 
   return (
     <section id="skills" className="skills-section" ref={sectionRef}>
-      <h2 className="skills-title">What I Do</h2>
+      <h2 className="skills-title">Skills</h2>
       <div> <ScrollIndicator /></div>
       <div className="skills-wrapper">
         {skills.map((skill, index) => (

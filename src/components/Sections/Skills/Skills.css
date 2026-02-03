@@ -27,7 +27,7 @@
     background: radial-gradient(circle, #5707b3, transparent);
     top: -100px;
     right: -100px;
-    filter: blur(100px);
+    filter: blur(80px);
     z-index: 0;
 }
 
@@ -73,6 +73,7 @@
     transition: background 0.4s ease;
     /* Removed transform from transition */
     will-change: transform, opacity;
+    backface-visibility: hidden;
 }
 
 

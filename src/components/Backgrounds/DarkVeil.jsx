@@ -9,7 +9,7 @@ void main(){gl_Position=vec4(position,0.0,1.0);}
 
 const fragment = `
 #ifdef GL_ES
-precision lowp float;
+precision mediump float;
 #endif
 uniform vec2 uResolution;
 uniform float uTime;
@@ -81,7 +81,7 @@ export default function DarkVeil({
   speed = 1.1,
   scanlineFrequency = 0,
   warpAmount = 0,
-  resolutionScale = 1
+  resolutionScale = 1.0
 }) {
   const ref = useRef(null);
   useEffect(() => {
@@ -89,7 +89,7 @@ export default function DarkVeil({
     const parent = canvas.parentElement;
 
     const renderer = new Renderer({
-      dpr: Math.min(window.devicePixelRatio, 1.5),
+      dpr: Math.min(window.devicePixelRatio, 2),
       canvas
     });
 
