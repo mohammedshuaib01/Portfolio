@@ -18,6 +18,7 @@
     font-family: 'Clash Display', sans-serif;
 
 }
+
 .skills-section::before {
     content: "";
     position: absolute;
@@ -29,6 +30,7 @@
     filter: blur(100px);
     z-index: 0;
 }
+
 .skills-title {
     /* font-family: 'Poppins', sans-serif; */
     font-size: 4rem;
@@ -61,13 +63,16 @@
     align-items: center;
     justify-content: center;
     opacity: 0;
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
+    /* Removed for performance */
     box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
     transform-origin: center;
 
     background: linear-gradient(135deg, #480a69, #121212);
     border: 1px solid #2a2a2a;
-    transition: transform 0.4s ease, background 0.4s ease;
+    transition: background 0.4s ease;
+    /* Removed transform from transition */
+    will-change: transform, opacity;
 }
 
 

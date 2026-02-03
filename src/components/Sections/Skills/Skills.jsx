@@ -17,7 +17,7 @@ function Skills() {
           trigger: sectionRef.current,
           start: "top top",
           end: "+=4000", // shorter = faster overall scroll, longer = slower transitions
-          scrub: 2, // smoother scrub motion
+          scrub: 1, // faster response to scroll
           pin: true,
           // markers: true,
         },
@@ -25,7 +25,7 @@ function Skills() {
 
       boxesRef.current.forEach((box, i) => {
         // Each box animation segment
-        const durationPerBox = 3; // controls time taken per box scroll section
+        const durationPerBox = 3;
 
         // Entrance from bottom
         tl.fromTo(
@@ -35,8 +35,8 @@ function Skills() {
             y: 0,
             opacity: 1,
             scale: 1,
-            duration: 2,
-            ease: "power2.out",
+            duration: 1.5,
+            ease: "power3.out",
           },
           i * durationPerBox
         );
@@ -48,8 +48,8 @@ function Skills() {
             y: -1000,
             opacity: 0,
             scale: 0.9,
-            duration: 2,
-            ease: "power2.inOut",
+            duration: 1.5,
+            ease: "power3.in",
 
           },
           i * durationPerBox + 3
